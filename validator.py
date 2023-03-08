@@ -4,11 +4,11 @@
 from scanner import *
 from parser import *
 
-#input_string = '''
-#x := 5;
-#y := x;
-#PRINT 64;
-#'''
+# input_string = '''
+# x := 5;
+# y := x;
+# PRINT 64;
+# '''
 
 input_string = '''
  PRINT x;
@@ -18,10 +18,9 @@ input_string = '''
     ENDIF;
 '''
 
-print input_string
+print(input_string)
 scanner = Scanner(input_string)
-#print scanner.tokens
+# print scanner.tokens
 
 parser = Parser(scanner)
 parser.start()
-  
